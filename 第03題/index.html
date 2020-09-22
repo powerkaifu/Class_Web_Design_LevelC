@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>國家公園介紹網</title>
+	<style type="text/css">
+		#main {
+			margin: auto;
+			height: 768px;
+			width: 1024px;
+		}
+
+		#top {
+			margin: auto;
+			height: 65px;
+			width: 1000px;
+			background-color: #0000FF;
+			text-align: center;
+		}
+
+		#menu {
+			float: left;
+			height: 683px;
+			width: 200px;
+			margin-left: 12px;
+			background-color: #00FFFF;
+		}
+
+		#main #menu table tr td img {
+			width: 120px;
+			height: 40px;
+		}
+
+		#main #menu table tr td img:hover {
+			filter: hue-rotate(180deg);
+		}
+
+		marquee {
+			float: left;
+			height: 29px;
+			width: 800px;
+			/* 第二種 */
+			/* float:right; */
+			/* margin-right: 12px; */
+		}
+
+		/* 可以設定 iframe float:left，但其實不用，iframe 為 inline，這題可以隨著 float 圍繞 */
+		/* #main iframe {
+			float: left;
+		} */
+
+
+		#footer {
+			margin: auto;
+			clear: both;
+			height: 20px;
+			width: 1000px;
+			font-family: "標楷體";
+			color: #000;
+			font-size: 16px;
+			text-align: center;
+		}
+
+
+
+		#top span {
+			display: inline-block;
+			width: 90px;
+			height: 65px;
+		}
+
+		.animation {
+			animation: animation 3s infinite steps(1, end);
+		}
+
+		@keyframes animation {
+			0% {
+				background: url(imgaes/park0307.jpg) center/cover;
+			}
+
+			33% {
+				background: url(imgaes/park0308.jpg) center/cover;
+			}
+
+			66% {
+				background: url(imgaes/park0309.jpg) center/cover;
+			}
+
+			100% {
+				background: url(imgaes/park0310.jpg) center/cover;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		<div id="top">
+			<!-- <a href="index.html"><span class="animation"></span></a> -->
+			<a href="index.html"><img src="imgaes/park0307.gif" width="91" height="65" /></a>
+		</div>
+		<div id="menu">
+			<!-- 建立七列一欄表格，寬200 -->
+			<table width="200" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="center"><a href="park/yangmingshan.html" target="iframe"><img src="imgaes/park0302.jpg" alt="陽明山國家公園" title="陽明山國家公園" /></a></td>
+				</tr>
+				<tr>
+					<td align="center">&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="center"><a href="park/sheipa.html" target="iframe"><img src="imgaes/park0303.jpg" alt="雪霸國家公園" title="雪霸國家公園" /></a></td>
+				</tr>
+				<tr>
+					<td align="center">&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="imgaes/park0304.jpg" alt="太魯閣國家公園" title="太魯閣國家公園" /></td>
+				</tr>
+				<tr>
+					<td align="center">&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="imgaes/park0305.jpg" alt="玉山國家公園" title="玉山國家公園" />
+					</td>
+				</tr>
+			</table>
+			<p align="center"><a href="others/park.mp3" download>檔案下載</a></p>
+		</div>
+		<marquee>歡迎進入國家公園介紹網，本網站有詳細的國家公園介紹哦！</marquee>
+		<!-- iframe 為 inline 會圍繞著 float -->
+		<iframe src="others/main.html" name="iframe" width="800" marginwidth="0" height="654" marginheight="0" scrolling="auto" frameborder="0"></iframe>
+		<div id="footer">網頁設計及維護：00張凱富、最近更新日期：2019/11/05</div>
+
+	</div>
+
+</body>
+
+</html>
